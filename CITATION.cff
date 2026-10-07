@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Please cite the original PaDEL paper and identify the exact OPERA-PaDEL release used."
+title: "OPERA PaDEL-Descriptor"
+type: software
+authors:
+  - family-names: "Yap"
+    given-names: "Chun Wei"
+  - family-names: "Mansouri"
+    given-names: "Kamel"
+repository-code: "https://github.com/kmansouri/OPERA-PaDEL-Descriptor"
+url: "https://github.com/kmansouri/OPERA-PaDEL-Descriptor"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Yap"
+      given-names: "Chun Wei"
+  title: "PaDEL-Descriptor: An open source software to calculate molecular descriptors and fingerprints"
+  journal: "Journal of Computational Chemistry"
+  year: 2011
+  volume: 32
+  issue: 7
+  start: 1466
+  end: 1474
+  doi: "10.1002/jcc.21707"
+version: "1.0.0-opera-legacy"
