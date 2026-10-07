@@ -2,10 +2,10 @@ package libpadeldescriptor;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.openscience.cdk.exception.CDKException;
-import org.openscience.cdk.interfaces.IAtomContainer;
-import org.openscience.cdk.qsar.DescriptorValue;
-import org.openscience.cdk.qsar.IMolecularDescriptor;
+import org.openscience.cdk1.exception.CDKException;
+import org.openscience.cdk1.interfaces.IAtomContainer;
+import org.openscience.cdk1.qsar.DescriptorValue;
+import org.openscience.cdk1.qsar.IMolecularDescriptor;
 
 /**
  * Base class for making CDK descriptor classes runnable.

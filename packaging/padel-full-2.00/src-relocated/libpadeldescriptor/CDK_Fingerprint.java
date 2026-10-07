@@ -3,8 +3,8 @@ package libpadeldescriptor;
 import java.util.BitSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.openscience.cdk.fingerprint.IFingerprinter;
-import org.openscience.cdk.interfaces.IAtomContainer;
+import org.openscience.cdk1.fingerprint.IFingerprinter;
+import org.openscience.cdk1.interfaces.IAtomContainer;
 
 /**
  * Base class for making CDK fingerprint classes runnable.

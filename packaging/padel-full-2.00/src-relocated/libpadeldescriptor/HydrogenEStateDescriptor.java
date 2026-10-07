@@ -27,18 +27,18 @@ package libpadeldescriptor;
 
 
 import java.util.Iterator;
-import org.openscience.cdk.annotations.TestClass;
-import org.openscience.cdk.annotations.TestMethod;
-import org.openscience.cdk.exception.CDKException;
-import org.openscience.cdk.graph.PathTools;
-import org.openscience.cdk.interfaces.IAtom;
-import org.openscience.cdk.interfaces.IAtomContainer;
-import org.openscience.cdk.qsar.DescriptorSpecification;
-import org.openscience.cdk.qsar.DescriptorValue;
-import org.openscience.cdk.qsar.IAtomicDescriptor;
-import org.openscience.cdk.qsar.result.DoubleArrayResult;
-import org.openscience.cdk.qsar.result.DoubleResult;
-import org.openscience.cdk.tools.manipulator.AtomContainerManipulator;
+import org.openscience.cdk1.annotations.TestClass;
+import org.openscience.cdk1.annotations.TestMethod;
+import org.openscience.cdk1.exception.CDKException;
+import org.openscience.cdk1.graph.PathTools;
+import org.openscience.cdk1.interfaces.IAtom;
+import org.openscience.cdk1.interfaces.IAtomContainer;
+import org.openscience.cdk1.qsar.DescriptorSpecification;
+import org.openscience.cdk1.qsar.DescriptorValue;
+import org.openscience.cdk1.qsar.IAtomicDescriptor;
+import org.openscience.cdk1.qsar.result.DoubleArrayResult;
+import org.openscience.cdk1.qsar.result.DoubleResult;
+import org.openscience.cdk1.tools.manipulator.AtomContainerManipulator;
 
 /**
  *  Hydrogen Electrotopological State of an atom. 
@@ -89,7 +89,7 @@ import org.openscience.cdk.tools.manipulator.AtomContainerManipulator;
  *@cdk.set        qsar-descriptors
  * @cdk.dictref qsar-descriptors:hydrogenEStateDescriptor
  */
-@TestClass(value="org.openscience.cdk.qsar.descriptors.atomic.hydrogenEStateDescriptorTest")
+@TestClass(value="org.openscience.cdk1.qsar.descriptors.atomic.hydrogenEStateDescriptorTest")
 public class HydrogenEStateDescriptor implements IAtomicDescriptor {
 
     private static final String[] names = {"HydrogenEState"};

@@ -18,10 +18,10 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import libpadeljobs.Worker;
-import org.openscience.cdk.interfaces.IAtomContainer;
-import org.openscience.cdk.interfaces.IMolecule;
-import org.openscience.cdk.modeling.builder3d.ModelBuilder3D;
-import org.openscience.cdk.modeling.builder3d.TemplateHandler3D;
+import org.openscience.cdk1.interfaces.IAtomContainer;
+import org.openscience.cdk1.interfaces.IMolecule;
+import org.openscience.cdk1.modeling.builder3d.ModelBuilder3D;
+import org.openscience.cdk1.modeling.builder3d.TemplateHandler3D;
 
 /**
  * Worker class to calculate descriptors for a molecule.

@@ -3,32 +3,33 @@
 An independently maintained OPERA continuation of PaDEL-Descriptor, originally
 developed by Chun Wei Yap.
 
-> [!CAUTION]
-> The only release represented at this tag is the archival legacy OPERA bundle.
-> It contains a known concurrency defect and should not be used for new work.
+## Releases
 
-## Available release
+| Tag | Engine | Intended use | Status |
+|---|---|---|---|
+| `v1.0.0-opera-legacy` | PaDEL 2.21 / CDK 1.4.15 | Historical reproduction | Known defect; archival only |
+| `v2.0.0-opera-fixed-cdk1` | PaDEL 2.21 / patched CDK 1.4.15 | Current OPERA models | Stable and recommended |
 
-| Tag | Engine | Status |
-|---|---|---|
-| `v1.0.0-opera-legacy` | PaDEL 2.21 / CDK 1.4.15 | Historical reproduction only |
+## Current OPERA engine
 
-The historical JAR is named `padel-full-1.00.jar`; `1.00` is the OPERA bundle
-version, not the PaDEL application version.
+Use `padel-full-2.00.jar` for current OPERA models. It preserves the historical
+1,444-column schema and fixes the legacy valence-table and timeout/concurrency
+failures.
+
+```bash
+java -Djava.awt.headless=true \
+  -jar padel-full-2.00.jar \
+  -2d -removesalt -standardizenitro -detectaromaticity -retainorder \
+  -threads 8 -waitingjobs 32 -maxruntime 60000 \
+  -dir input.smi -file descriptors.csv
+```
 
 ## Roadmap
 
-- fixed CDK1-compatible engine for existing OPERA models;
-- modern CDK 2.13 engine for future retrained OPERA models.
+A separate CDK 2.13 engine is being developed for future OPERA models that will
+be retrained on the new descriptor values.
 
-## Citation
+## Citation and licensing
 
-Yap CW. PaDEL-Descriptor: An open source software to calculate molecular
-descriptors and fingerprints. *J Comput Chem.* 2011;32(7):1466-1474.
-doi:10.1002/jcc.21707.
-
-## Independence statement
-
-This repository is not an official release of the original PaDEL author or the
-CDK project and does not imply their endorsement. See `NOTICE.md` and
-`LICENSE.md`.
+Cite the original PaDEL paper and identify the exact release tag/JAR checksum.
+See `CITATION.cff`, `NOTICE.md`, and `LICENSE.md`.
