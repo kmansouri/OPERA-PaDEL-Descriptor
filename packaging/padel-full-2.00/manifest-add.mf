@@ -1,6 +1,0 @@
-Implementation-Title: PaDEL-Descriptor OPERA fixed build
-Implementation-Version: 2.00
-PaDEL-Upstream-Version: 2.21
-PaDEL-Patch-Date: 2026-09-30
-PaDEL-Target-Classfile: Java 8 (52)
-PaDEL-Validated-Java: OpenJDK 21.0.11
